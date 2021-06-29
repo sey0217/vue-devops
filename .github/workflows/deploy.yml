@@ -32,7 +32,8 @@ jobs:
 
       - name: Build page
         run: yarn build
-        env: NODE_ENV:production
+        env:
+          NODE_ENV: production
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
